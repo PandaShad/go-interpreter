@@ -14,8 +14,15 @@ const (
 	IDENT = "IDENT"
 	INT   = "INT"
 
-	ASSIGN = "="
-	PLUS   = "+"
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	ASTERISK = "*"
+	SLASH    = "/"
+	BANG     = "!"
+
+	EQ     = "=="
+	NOT_EQ = "!="
 
 	COMMA     = ","
 	SEMICOLON = ";"
@@ -24,9 +31,17 @@ const (
 	RPAREN = ")"
 	LBRACE = "{"
 	RBRACE = "}"
+	LT     = "<"
+	GT     = ">"
 
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
+	RETURN   = "RETURN"
+	IF       = "IF"
+	ELSE     = "ELSE"
+
+	TRUE  = "TRUE"
+	FALSE = "FALSE"
 )
 
 var keywords = map[string]TokenType{
